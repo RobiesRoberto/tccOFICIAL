@@ -1,0 +1,254 @@
+
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+header
+{
+    
+    width: 100%;
+    padding: auto;
+    display:flex ;
+    align-items: center;
+    background-color:#30164B;
+    
+}
+
+
+
+.LOGO img{
+    width: 175px;
+    height: auto;
+    margin: auto;
+    padding: 1rem;
+}
+
+.foto img{
+    width: 37vw;
+    height: auto;
+    margin:left;
+}
+
+.fotologo img{
+    width: 100px;
+    height: auto;
+    margin:left;
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.left-login{
+    font-size: 3vw;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-login{
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: rgb(255, 255, 255);
+    border-radius:20px ;
+    box-shadow: 0px 10px 40px black;
+
+}
+
+.card-login > h1 {
+    color: black;
+    font-weight: 700;
+    margin: 0;
+}
+
+.textfield{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px;
+
+}
+
+.textfield > input{
+   width: 275px;
+   border: none;
+   border-radius: 15px;
+   padding: 10px;
+   background:#EFEDED ;
+   color: rgb(0, 0, 0);
+   font-size: 12pt;
+   outline: none;
+   box-sizing: border-box;
+}
+
+.textfield > label {
+    margin-bottom: 10px;
+}
+
+.btn-login{
+    width: 45%;
+    padding: 16px 38px;
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: white;
+    background: #604878;
+    cursor:pointer;
+    text-decoration: none;
+    font-size: 14px;
+    
+}
+
+.btn-cadastro{
+    width: 45%;
+    padding: 16px 19px;
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: white;
+    background: #604878;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    
+}
+
+footer {
+    width: 100%;
+    color: white;
+    background: #30164B;
+}
+
+.footer-link {
+    text-decoration:none;
+}
+#footer_content {
+    display: grid;
+    grid-template-columns: (2, 1fr);
+    padding: 1.5rem 1.5rem;
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: white;
+    border-radius: 50%;
+    transition:all 0.4s;
+}
+#footer_social_media .footer-link:hover {
+    opacity: 0.8;
+}
+
+#footer_social_media .footer-link i {
+ font-size: 1.25rem;
+}
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+#facebook {
+    background-color: #4267b3;
+}
+
+
+#footer_copyright {
+    display:flex;
+    justify-content: center;
+    background: black;
+    color: white;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+@media only screen and (max-width: 950px){
+    .card-login{
+        width: 85%
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .main-login{
+    flex-direction: column;
+    }
+  .left-login{
+    width: 100%;
+    height: auto;
+  }
+  .right-login{
+    width: 100%;
+    height: auto;
+  }
+  .foto img{
+    width: 50vw;
+    align-items:center;
+  }
+   .card-login{
+    width: 90%;
+   }
+}
+
+@media screen and (max-width: 768px) {
+ #footer_content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+ }
+}
+
+@media screen and (max-width: 426px) {
+    #footer_content {
+       grid-template-columns: repeat(1, 1fr);
+       gap:3rem 2rem;
+    }
+   }
+    
+
+
